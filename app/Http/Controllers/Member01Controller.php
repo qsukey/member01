@@ -39,7 +39,7 @@ class Member01Controller extends Controller
         $request->validate([
             'name' => 'required|max:255',
             'phone' => 'required|max:255',
-            'email' => 'required|max:255|unique:Member01',
+            'email' => 'required|max:255|unique:member01',
         ]);
 
         Member01::create([
